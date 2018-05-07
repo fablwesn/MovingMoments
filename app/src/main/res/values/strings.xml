@@ -1,0 +1,213 @@
+<!--
+  ~ Copyright (C) 2018 Darijo Barucic, Seventoes
+  ~
+  ~  Licensed under the MIT License
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<resources>
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+         Application's name. [DO NOT TRANSLATE] -->
+    <string name="app_name" translatable="false">Moving Moments</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+         Activity Labels -->
+
+    <!-- Home Activity's Labels. [CHAR LIMIT=25] -->
+    <string name="act_label_home_mov">Discover Movies</string>
+    <string name="act_label_home_fav">Your Favorites</string>
+
+    <!-- Setting Activity's Label. [CHAR LIMIT=25] -->
+    <string name="act_label_settings">Customize your Moments</string>
+
+    <!-- Search Results Activity's Label. [CHAR LIMIT=25] -->
+    <string name="act_label_searchresults">Results for: %1$s</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+        Menus -->
+
+    <!-- Home Activity's menu action searching for a movie in the web api. [CHAR LIMIT=10] -->
+    <string name="menu_title_search">Search</string>
+    <!-- Home Activity's search query hint. [CHAR LIMIT=25] -->
+    <string name="menu_hint_search">search for a movie</string>
+
+    <!-- Detail Activity's favorite menu title. [CHAR LIMIT=20] -->
+    <string name="menu_title_favorite">Add/Remove Favorites</string>
+    <!-- Detail Activity's share menu title. [CHAR LIMIT=20] -->
+    <string name="menu_title_share">Share Movie</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+       Home Navigation Drawer -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_title_discover">Discover</string>
+    <string name="nav_title_misc">Other</string>
+
+    <string name="nav_item_title_movies">Movies</string>
+    <string name="nav_item_title_tv">TV Shows</string>
+    <string name="nav_item_title_people">People</string>
+    <string name="nav_item_title_adv_search">Advanced Search</string>
+    <string name="nav_item_title_favorites">Favorites</string>
+    <string name="nav_item_title_feedback">Feedback</string>
+    <string name="nav_item_title_about">About</string>
+    <string name="nav_item_title_settings">Settings</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+         Details Activity -->
+
+    <!-- Encapsulates text to quote [DO NOT TRANSLATE] -->
+    <string name="details_quote_frame" translatable="false">\"%1$s\"\u0020</string>
+
+    <!-- Placeholder for missing data [CHAR LIMIT=10] -->
+    <string name="details_default_empty">N/A</string>
+    <!-- Runtime appendix [CHAR LIMIT=5] -->
+    <string name="details_runtime_appen">%1$dmin&#160;</string>
+    <!-- No homepage available toast [NO CHAR LIMIT] -->
+    <string name="details_no_homepage">no homepage-link available</string>
+    <!-- Written next to the vote count [CHAR LIMIT=20] -->
+    <string name="details_vote_count_suffix">&#160;votes rated</string>
+    <!-- Reviews click indicator. [NO CHAR LIMIT]  -->
+    <string name="review_click_to_open">click to open full review</string>
+
+    <!-- Details Text headers [CHAR LIMIT=20] -->
+    <string name="details_header_release_date">Release Date</string>
+    <string name="details_header_release_countries">Produced in</string>
+    <string name="details_header_orig_title">Original Title</string>
+    <string name="details_header_orig_lang">Original Language</string>
+    <string name="details_header_budget">Budget</string>
+    <string name="details_header_revenue">Revenue</string>
+
+    <!-- Details dollar appendix for budget and revenue -->
+    <string name="details_dollar_appendix">%1$s $</string>
+
+    <!-- Sharing Intent for the movie -->
+    <string name="sharing_intent_movie_body">Check out this movie:\n\n%1$s</string>
+    <string name="sharing_intent_movie_title">Share Movie-Link with</string>
+
+    <!-- Adding a movie to favorites, toasts. -->
+    <string name="added_fav_toast">Movie added to favorites.</string>
+    <string name="add_fav_error_toast">Failed adding to favorites. Please retry</string>
+    <string name="removed_fav_toast">Movie removed from favorites.</string>
+    <string name="rem_fav_error_toast">Failed removing from favorites. Please retry</string>
+
+    <!-- Displayed when viewing favorites without internet connection -->
+    <string name="fav_det_no_conn">Enable Network-Connection to display all details.</string>
+
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+         Preferences -->
+
+    <!-- Section title for the HomePager settings. [CHAR LIMIT=30] -->
+    <string name="pref_section_general">General</string>
+
+    <!-- Display or hide adult movie results title. [CHAR LIMIT=25] -->
+    <string name="pref_pager_display_adult_title">Adult results</string>
+    <!-- Display or hide adult movie results summary. [CHAR LIMIT=40] -->
+    <string name="pref_pager_display_adult_summary_on">May contain inappropriate content.</string>
+    <string name="pref_pager_display_adult_summary_off">Won\'t display adult rated movies.</string>
+
+    <!-- Set the default section to show on startup. [CHAR LIMIT=25] -->
+    <string name="pref_pager_def_sec_title">Set Default Section</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+       RecyclerView Empty-Text -->
+
+    <!-- Inform the user that the data is being loaded. [NO CHAR LIMIT] -->
+    <string name="loading_data">Please wait while loading most recent data.</string>
+    <!-- Inform the user the need of internet connectivity to use the app. [NO CHAR LIMIT] -->
+    <string name="no_connection_error">Your device seems to be offline.\nPlease enable internet connection and retry.</string>
+    <!-- Inform the user that no data could be loaded. [NO CHAR LIMIT] -->
+    <string name="no_data_fetched">No data could be fetched. Please try again in a few moments.</string>
+    <!-- Inform the user that no search result could be found. [NO CHAR LIMIT] -->
+    <string name="no_results_found">No results could be found\nfor your query.</string>
+    <!-- Inform the user when no media could be loaded. [NO CHAR LIMIT] -->
+    <string name="no_videos_found">No videos for this movie.</string>
+    <!-- Inform the user when no review could be loaded. [NO CHAR LIMIT] -->
+    <string name="no_reviews_found">No reviews for this movie.</string>
+    <!-- Inform the user that no favorites could be loaded. [NO CHAR LIMIT] -->
+    <string name="no_favorites_found">No favorites added yet.\n\n\u2764 a movie\nto add it to your favorites list.</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+       Api Categories -->
+
+    <!-- Pre-made [CHAR LIMIT=15] -->
+    <string name="title_category_pop">Popular</string>
+    <string name="title_category_top">Top Rated</string>
+
+    <!-- Genres [CHAR LIMIT=15] -->
+    <string name="title_category_action">Action</string>
+    <string name="title_category_adven">Adventure</string>
+    <string name="title_category_anim">Animation</string>
+    <string name="title_category_comedy">Comedy</string>
+    <string name="title_category_crime">Crime</string>
+    <string name="title_category_docu">Documentary</string>
+    <string name="title_category_drama">Drama</string>
+    <string name="title_category_family">Family</string>
+    <string name="title_category_fantasy">Fantasy</string>
+    <string name="title_category_hist">History</string>
+    <string name="title_category_horror">Horror</string>
+    <string name="title_category_music">Music</string>
+    <string name="title_category_myst">Mystery</string>
+    <string name="title_category_romance">Romance</string>
+    <string name="title_category_sf">Sci-Fi</string>
+    <string name="title_category_tv">TV Movie</string>
+    <string name="title_category_thriller">Thriller</string>
+    <string name="title_category_war">War</string>
+    <string name="title_category_western">Western</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+        Content descriptions -->
+
+    <string name="cd_details_backdrop">Backdrop-Image of the movie.</string>
+    <string name="cd_details_poster">Poster-Image of the movie.</string>
+    <string name="cd_details_separator">Visual Text-Separator, circle-shaped.</string>
+    <string name="cd_details_video_thumbnail">Preview-Thumbnail of the video.</string>
+    <string name="cd_details_video_play">Indicator for \'Press to Play\'</string>
+    <string name="cd_home_drawer_header">Header Image displaying a TMDb Logo.</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+          Keys [DO NOT TRANSLATE] -->
+    <string name="pref_key_enable_adult" translatable="false">enable_adult</string>
+    <string name="pref_key_default_section" translatable="false">def_sec</string>
+
+    <!--_________________________________________________________________________________________-->
+
+</resources>

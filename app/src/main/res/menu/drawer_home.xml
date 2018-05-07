@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2018 Darijo Barucic, Seventoes
+  ~
+  ~  Licensed under the MIT License
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Browsing sections -->
+    <item android:title="@string/nav_title_discover">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@id/nav_movies"
+                    android:icon="@drawable/ic_nav_movie"
+                    android:title="@string/nav_item_title_movies" />
+                <item
+                    android:id="@id/nav_tv_shows"
+                    android:enabled="false"
+                    android:icon="@drawable/ic_nav_tv"
+                    android:title="@string/nav_item_title_tv" />
+                <item
+                    android:id="@id/nav_people"
+                    android:enabled="false"
+                    android:icon="@drawable/ic_nav_people"
+                    android:title="@string/nav_item_title_people" />
+                <item
+                    android:id="@id/nav_adv_search"
+                    android:enabled="false"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_search"
+                    android:title="@string/nav_item_title_adv_search" />
+            </group>
+        </menu>
+    </item>
+
+    <!-- Pref. and misc. -->
+    <item
+        android:id="@id/nav_favorites"
+        android:checkable="true"
+        android:icon="@drawable/ic_favorite_full"
+        android:title="@string/nav_item_title_favorites" />
+
+    <item android:title="@string/nav_title_misc">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@id/nav_feedback"
+                    android:enabled="false"
+                    android:icon="@drawable/ic_nav_feedback"
+                    android:title="@string/nav_item_title_feedback" />
+                <item
+                    android:id="@id/nav_about"
+                    android:enabled="false"
+                    android:icon="@drawable/ic_nav_about"
+                    android:title="@string/nav_item_title_about" />
+                <item
+                    android:id="@id/nav_settings"
+                    android:icon="@drawable/ic_nav_settings"
+                    android:title="@string/nav_item_title_settings" />
+            </group>
+        </menu>
+    </item>
+</menu>

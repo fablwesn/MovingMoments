@@ -1,0 +1,57 @@
+<!--
+  ~ Copyright (C) 2018 Darijo Barucic, Seventoes
+  ~
+  ~  Licensed under the MIT License
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="72dp"
+    android:viewportHeight="72.0"
+    android:viewportWidth="48.0">
+    <path
+        android:fillColor="#212121"
+        android:pathData="M42.33,47.33h-38V18h38ZM5.67,46H41V19.33H5.67Z" />
+    <path
+        android:fillColor="#081c24"
+        android:pathData="M7.67,21.33h31.33v22.67h-31.33z" />
+    <path
+        android:fillColor="#212121"
+        android:pathData="M39.67,44.67H7v-24H39.67ZM8.33,43.33h30V22h-30Z" />
+    <path
+        android:fillColor="#f3d55a"
+        android:pathData="M14.33,27.05m-3.05,0a3.05,3.05 0,1 1,6.1 0a3.05,3.05 0,1 1,-6.1 0" />
+    <path
+        android:fillColor="#11a085"
+        android:pathData="M38.33,37.41l-0.66,-0.74l-8,-7.34l-7,7.67l3.65,3.66l2.68,2.67l9.33,0l0,-5.92z" />
+    <path
+        android:fillColor="#26b999"
+        android:pathData="M8.33,43.33l20.67,0l-2.68,-2.67l-7.31,-7.32l-10.68,9.33l0,0.66z" />
+    <path
+        android:fillColor="#212121"
+        android:pathData="M36,45.67m-8.33,0a8.33,8.33 0,1 1,16.66 0a8.33,8.33 0,1 1,-16.66 0" />
+    <path
+        android:fillColor="#01d277"
+        android:pathData="M42.46,46a0.66,0.66 0,0 0,-0.78 0.53A5.86,5.86 0,0 1,36 51.33,5.81 5.81,0 0,1 30.81,48h3.53V46.67H29V52h1.33V49.77A7.08,7.08 0,0 0,36 52.67a7.2,7.2 0,0 0,7 -5.87A0.67,0.67 0,0 0,42.46 46Z" />
+    <path
+        android:fillColor="#01d277"
+        android:pathData="M41.67,39.33v2.23A7.08,7.08 0,0 0,36 38.67a7.2,7.2 0,0 0,-7 5.87,0.67 0.67,0 0,0 1.31,0.26A5.86,5.86 0,0 1,36 40a5.81,5.81 0,0 1,5.19 3.33H37.67v1.33H43V39.33Z" />
+</vector>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2018 Darijo Barucic, Seventoes
+  ~
+  ~  Licensed under the MIT License
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<!-- Content of the expanded toolbar inside the Details Activity -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Backdrop image pager -->
+    <android.support.v4.view.ViewPager
+        android:id="@id/details_backdrop_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backdrop_image_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Backdrop pager indicator -->
+    <android.support.design.widget.TabLayout
+        android:id="@id/details_backdrop_tablayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_space_medium"
+        app:layout_constraintBottom_toBottomOf="@id/details_backdrop_pager"
+        app:layout_constraintEnd_toStartOf="@id/details_guideline_indicator"
+        app:layout_constraintStart_toEndOf="@id/details_poster_img"
+        app:tabBackground="@drawable/selector_pager_indicator"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
+
+    <!-- Frame on bottom of toolbar holding the text info -->
+    <FrameLayout
+        android:id="@id/details_tb_info_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_info_height"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_backdrop_pager">
+
+    </FrameLayout>
+
+    <!-- Poster image -->
+    <ImageView
+        android:id="@id/details_poster_img"
+        android:layout_width="@dimen/details_poster_width"
+        android:layout_height="@dimen/details_poster_height"
+        android:layout_margin="@dimen/default_space_large"
+        android:contentDescription="@string/cd_details_poster"
+        app:layout_constraintBottom_toBottomOf="@id/details_tb_info_frame"
+        app:layout_constraintStart_toStartOf="@id/details_tb_info_frame" />
+
+    <!-- Guideline on the right for the tablayout -->
+    <android.support.constraint.Guideline
+        android:id="@id/details_guideline_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/details_guideline_end_offset" />
+
+    <!-- SmallText - Runtime -->
+    <TextView
+        android:id="@id/details_toolbar_runtime_txt"
+        style="@style/DetailTextSmallToolbar"
+        android:layout_marginLeft="@dimen/default_space_large"
+        android:layout_marginStart="@dimen/default_space_large"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/details_poster_img"
+        app:layout_constraintTop_toTopOf="@id/details_tb_info_frame" />
+
+    <!-- Image - Separator -->
+    <ImageView
+        android:id="@id/details_first_separator"
+        style="@style/DetailsImgSeparatorToolbar"
+        android:contentDescription="@string/cd_details_separator"
+        app:layout_constraintBottom_toBottomOf="@id/details_toolbar_runtime_txt"
+        app:layout_constraintStart_toEndOf="@id/details_toolbar_runtime_txt"
+        app:layout_constraintTop_toTopOf="@id/details_toolbar_runtime_txt" />
+
+    <!-- SmallText - Release -->
+    <TextView
+        android:id="@id/details_toolbar_release_txt"
+        style="@style/DetailTextSmallToolbar"
+        android:layout_marginLeft="@dimen/default_space_small"
+        android:layout_marginStart="@dimen/default_space_small"
+        app:layout_constraintBottom_toBottomOf="@id/details_toolbar_runtime_txt"
+        app:layout_constraintStart_toEndOf="@id/details_first_separator"
+        app:layout_constraintTop_toTopOf="@id/details_toolbar_runtime_txt" />
+
+    <!-- Image - Separator -->
+    <ImageView
+        android:id="@id/details_second_separator"
+        style="@style/DetailsImgSeparatorToolbar"
+        android:contentDescription="@string/cd_details_separator"
+        app:layout_constraintBottom_toBottomOf="@id/details_toolbar_runtime_txt"
+        app:layout_constraintStart_toEndOf="@id/details_toolbar_release_txt"
+        app:layout_constraintTop_toTopOf="@id/details_toolbar_runtime_txt" />
+
+    <!-- SmallText - Production-Countries Iso -->
+    <TextView
+        android:id="@id/details_toolbar_countries_iso_txt"
+        style="@style/DetailTextSmallToolbar"
+        android:layout_width="0dp"
+        android:layout_marginLeft="@dimen/default_space_small"
+        android:layout_marginStart="@dimen/default_space_small"
+        android:layout_marginEnd="@dimen/default_space_small"
+        android:layout_marginRight="@dimen/default_space_small"
+        app:layout_constraintBottom_toBottomOf="@id/details_toolbar_runtime_txt"
+        app:layout_constraintStart_toEndOf="@id/details_second_separator"
+        app:layout_constraintTop_toTopOf="@id/details_toolbar_runtime_txt"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- LargeText - title -->
+    <TextView
+        android:id="@id/details_tb_title_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_space_large"
+        android:layout_marginStart="@dimen/default_space_large"
+        android:layout_marginTop="@dimen/default_space_tiny"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/details_tb_info_frame"
+        app:layout_constraintStart_toEndOf="@id/details_poster_img"
+        app:layout_constraintTop_toBottomOf="@id/details_toolbar_runtime_txt" />
+
+    <!-- MediumText - genres -->
+    <TextView
+        android:id="@id/details_tb_genre_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_space_small"
+        android:layout_marginEnd="@dimen/default_space_large"
+        android:layout_marginStart="@dimen/default_space_large"
+        android:layout_marginTop="@dimen/default_space_tiny"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@id/details_tb_info_frame"
+        app:layout_constraintEnd_toEndOf="@id/details_tb_info_frame"
+        app:layout_constraintStart_toEndOf="@id/details_poster_img"
+        app:layout_constraintTop_toBottomOf="@id/details_tb_title_txt" />
+
+</android.support.constraint.ConstraintLayout>

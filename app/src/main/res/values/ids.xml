@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018 Darijo Barucic, Seventoes
+  ~
+  ~  Licensed under the MIT License
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<resources>
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+        Activity Home -->
+
+    <!--
+        Activity
+    -->
+
+    <item name="drawer_layout" type="id" />
+    <item name="nav_view" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="fragment_section" type="id" />
+
+    <!--
+        Menu
+    -->
+    <item name="menu_action_search" type="id" />
+
+    <!--
+        Fragment Movies
+    -->
+
+    <item name="tablayout_home" type="id" />
+    <item name="viewpager_home" type="id" />
+
+    <!--
+       Movie Pager Fragment
+    -->
+    <item name="refresh_lay_fragment" type="id" />
+    <item name="recycler_view_fragment" type="id" />
+    <item name="progress_bar_fragment" type="id" />
+    <item name="text_empty_fragment" type="id" />
+
+    <!--
+       Favorites Fragment
+    -->
+    <item name="refreshlay_fav" type="id" />
+    <item name="gridview_fav" type="id" />
+    <item name="progressbar_fav" type="id" />
+    <item name="empty_txt_fav" type="id" />
+
+    <!--
+         Grid Item layout
+    -->
+    <item name="img_recycler_poster" type="id" />
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+        Navigation Drawer -->
+
+    <item name="nav_movies" type="id" />
+    <item name="nav_tv_shows" type="id" />
+    <item name="nav_people" type="id" />
+    <item name="nav_adv_search" type="id" />
+    <item name="nav_favorites" type="id" />
+    <item name="nav_feedback" type="id" />
+    <item name="nav_about" type="id" />
+    <item name="nav_settings" type="id" />
+
+    <item name="nav_header_img" type="id" />
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+      Activity Details -->
+
+    <item name="details_coordinator_lay" type="id" />
+    <item name="details_nested_scroll" type="id" />
+    <item name="details_app_bar_layout" type="id" />
+    <item name="details_collapsing_tb" type="id" />
+    <item name="details_toolbar" type="id" />
+
+    <item name="details_fab_favorites" type="id"/>
+
+    <!--
+        Menu
+    -->
+    <item name="menu_action_favorite" type="id" />
+    <item name="menu_action_share" type="id" />
+
+    <!--
+        Toolbar
+    -->
+    <item name="details_backdrop_pager" type="id" />
+    <item name="details_backdrop_tablayout" type="id" />
+    <item name="details_guideline_indicator" type="id" />
+    <item name="details_backdrop_img" type="id" />
+    <item name="details_poster_img" type="id" />
+    <item name="details_tb_info_frame" type="id" />
+    <item name="details_tb_title_txt" type="id" />
+    <item name="details_tb_genre_txt" type="id" />
+    <item name="details_toolbar_linlay_info" type="id" />
+    <item name="details_toolbar_runtime_txt" type="id" />
+    <item name="details_toolbar_release_txt" type="id" />
+    <item name="details_toolbar_countries_iso_txt" type="id" />
+    <item name="details_first_separator" type="id" />
+    <item name="details_second_separator" type="id" />
+
+    <!--
+        Content
+    -->
+    <item name="details_cardview_overview" type="id" />
+    <item name="details_cardview_details" type="id" />
+    <item name="details_cardview_trailer" type="id" />
+    <item name="details_cardview_rating" type="id" />
+    <item name="details_cardview_reviews" type="id" />
+    <item name="details_tagline_txt" type="id" />
+    <item name="details_overview_txt" type="id" />
+    <item name="details_votes_txt" type="id" />
+    <item name="details_vote_rating_bar" type="id" />
+    <item name="details_recycler_view_reviews" type="id"/>
+    <item name="details_empty_text_reviews" type="id"/>
+
+    <item name="details_text_rel_date" type="id"/>
+    <item name="details_text_rel_countries" type="id"/>
+    <item name="details_text_orig_title" type="id"/>
+    <item name="details_text_orig_lang" type="id"/>
+    <item name="details_text_budget" type="id"/>
+    <item name="details_text_revenue" type="id"/>
+
+    <!--
+         Videos Recycler item
+     -->
+    <item name="item_video_type_txt" type="id"/>
+    <item name="item_video_name_txt" type="id"/>
+    <item name="item_video_thumbnail_img" type="id"/>
+
+    <!--
+          Reviews Recycler item
+      -->
+    <item name="item_review_parent_rellay" type="id"/>
+    <item name="item_review_author_txt" type="id"/>
+    <item name="item_review_content_txt" type="id"/>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+        Activity Settings -->
+
+    <item name="fragment_settings" type="id" />
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+      Used in different activities -->
+
+    <!-- SearchResults Activity & Details Activity Media -->
+
+    <item name="recycler_loading" type="id" />
+    <item name="progressbar_loading" type="id" />
+    <item name="txt_empty_loading" type="id" />
+
+    <!--_________________________________________________________________________________________-->
+
+</resources>
