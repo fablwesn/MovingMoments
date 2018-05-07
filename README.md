@@ -16,6 +16,10 @@ You need the latest version of Android Studio and an emulator/device with minimu
 
 ### Running
 
+**You need a valid API-Key** from TMDb ([Lern here how to get one](https://developers.themoviedb.org/3/getting-started/introduction)).
+
+To add it, either look for the `// TODO: ADD YOUR API-KEY HERE` or open the **ApiUtils.java** under `/java/com.fablwesn.education.movingmoments/utility`
+
 To have everything displayed correctly, please fulfill following requirements:
 
 - Emulating in Android Studio
