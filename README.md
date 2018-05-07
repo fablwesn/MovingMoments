@@ -4,7 +4,11 @@ TMDb Movies App with Favorites (MySQL DB) for AND by Udacity &amp; Google
 
 ## Preview
 
+![Preview of Drawer](https://raw.githubusercontent.com/fablwesn/MovingMoments/master/preview_drawer.png)
+![Preview of List](https://raw.githubusercontent.com/fablwesn/MovingMoments/master/preview_list.png) 
 
+
+![Preview of Details](https://github.com/fablwesn/MovingMoments/blob/master/preview_details.gif?raw=true)
 
 ## Getting Started
 
