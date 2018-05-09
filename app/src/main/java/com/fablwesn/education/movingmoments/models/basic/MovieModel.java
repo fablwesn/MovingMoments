@@ -38,7 +38,7 @@ import java.util.List;
  */
 public class MovieModel implements Parcelable {
 
-    final static Creator<MovieModel> CREATOR = new Creator<MovieModel>() {
+    public final static Creator<MovieModel> CREATOR = new Creator<MovieModel>() {
 
 
         @SuppressWarnings({
