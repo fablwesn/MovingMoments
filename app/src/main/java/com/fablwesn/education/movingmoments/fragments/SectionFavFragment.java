@@ -70,9 +70,10 @@ public class SectionFavFragment extends Fragment implements LoaderManager.Loader
     /*¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
       Globals */
 
+    private final static String KEY_STATE_SCROLL = "grid_scroll_pos";
+    private int scrollPosition;
     private Activity activity;
     private Unbinder viewUnbind;
-
     private DbCursorAdapter dbCursorAdapter;
 
     /*____________________________________________________________________________________________*/
@@ -87,12 +88,19 @@ public class SectionFavFragment extends Fragment implements LoaderManager.Loader
         viewUnbind = ButterKnife.bind(this, view);
 
         activity = getActivity();
+        if(savedInstanceState != null){
+            scrollPosition = savedInstanceState.getInt(KEY_STATE_SCROLL);
+        }
 
         gridView.setEmptyView(emptyText);
         prepareSwipeRefresh();
         loadList();
-
         return view;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
     }
 
     @Override
@@ -100,6 +108,12 @@ public class SectionFavFragment extends Fragment implements LoaderManager.Loader
         super.onDestroyView();
         // Free binded views.
         viewUnbind.unbind();
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(KEY_STATE_SCROLL, gridView.getFirstVisiblePosition());
     }
 
     /*____________________________________________________________________________________________*/
@@ -162,6 +176,8 @@ public class SectionFavFragment extends Fragment implements LoaderManager.Loader
         gridView.setAdapter(dbCursorAdapter);
         refreshLayout.setRefreshing(false);
         progressBar.setVisibility(View.GONE);
+
+        gridView.smoothScrollToPosition(scrollPosition);
     }
 
     @Override

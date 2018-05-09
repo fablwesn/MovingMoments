@@ -35,6 +35,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -43,7 +44,6 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -197,6 +197,7 @@ public class DetailsFavsActivity extends AppCompatActivity implements LoaderMana
     private Timer backdropTimer;
 
     private boolean isFav;
+
     private int movieId = -1, movieVotes;
     private String movieTmdbLink, movieTitle, moviePoster, movieRelease, movieGenre, movieOverview, movieOrigTitle, movieOrigLang;
     private float movieRate;

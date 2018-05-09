@@ -29,6 +29,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -37,7 +38,6 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
@@ -100,6 +100,12 @@ public class HomeActivity extends AppCompatActivity
     /*
      * Private */
 
+    private final static String FRAG_TAG_FAV = "tag_fav";
+    private final static String FRAG_TAG_MOV = "tag_mov";
+
+    private SectionFavFragment sectionFavFragment;
+    private SectionMovFragment sectionMovFragment;
+
     private SharedPreferences sharedPreferences;
     private static String sectionSelected;
     private FragmentManager fragmentManager;
@@ -119,6 +125,11 @@ public class HomeActivity extends AppCompatActivity
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         sharedPreferences.registerOnSharedPreferenceChangeListener(prefListener);
         fragmentManager = getSupportFragmentManager();
+
+        if (savedInstanceState != null) {
+            sectionFavFragment = (SectionFavFragment) fragmentManager.findFragmentByTag(FRAG_TAG_FAV);
+            sectionMovFragment = (SectionMovFragment) fragmentManager.findFragmentByTag(FRAG_TAG_MOV);
+        }
 
         initSettingValues();
         prepareDisplay(savedInstanceState);
@@ -213,8 +224,12 @@ public class HomeActivity extends AppCompatActivity
                 isSection = true;
 
                 //Load Fragment
-                SectionMovFragment movFragment = new SectionMovFragment();
-                transaction.replace(R.id.fragment_section, movFragment);
+                if(sectionMovFragment == null){
+                    SectionMovFragment movFragment = new SectionMovFragment();
+                    transaction.replace(R.id.fragment_section, movFragment, FRAG_TAG_MOV);
+                } else {
+                    transaction.replace(R.id.fragment_section, sectionMovFragment);
+                }
                 break;
             case R.id.nav_tv_shows:
                 return true;
@@ -230,8 +245,12 @@ public class HomeActivity extends AppCompatActivity
                 isSection = true;
 
                 //Load Fragment
-                SectionFavFragment favFragment = new SectionFavFragment();
-                transaction.replace(R.id.fragment_section, favFragment);
+                if(sectionFavFragment == null){
+                    SectionFavFragment favFragment = new SectionFavFragment();
+                    transaction.replace(R.id.fragment_section, favFragment, FRAG_TAG_FAV);
+                } else {
+                    transaction.replace(R.id.fragment_section, sectionFavFragment);
+                }
                 break;
             case R.id.nav_feedback:
                 return true;
@@ -266,13 +285,13 @@ public class HomeActivity extends AppCompatActivity
         if (sectionSelected.equals(sectionLabelFavs)) {
             SectionFavFragment fragmentToDisplay = new SectionFavFragment();
             fragmentManager.beginTransaction()
-                    .add(R.id.fragment_section, fragmentToDisplay).commit();
+                    .add(R.id.fragment_section, fragmentToDisplay, FRAG_TAG_FAV).commit();
         }
         // Movie Fragment, also as default
         else {
             SectionMovFragment fragmentToDisplay = new SectionMovFragment();
             fragmentManager.beginTransaction()
-                    .add(R.id.fragment_section, fragmentToDisplay).commit();
+                    .add(R.id.fragment_section, fragmentToDisplay, FRAG_TAG_MOV).commit();
         }
         // Save the section for the search activity
         sharedPreferences.edit().putString(PREF_KEY_SECTION_DISPLAYED, sectionSelected).apply();
