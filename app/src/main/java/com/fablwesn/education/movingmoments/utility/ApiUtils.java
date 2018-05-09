@@ -36,7 +36,7 @@ import com.fablwesn.education.movingmoments.remote.TMDbMoviesService;
  */
 public class ApiUtils {
 
-    public static final String API_KEY = "6d15d8b834c2b37f0609ae13aa9ef4ea"; // TODO: ADD YOUR API-KEY HERE
+    public static final String API_KEY = ""; // TODO: ADD YOUR API-KEY HERE
 
     public static final String MOVIE_TMDB_LINK_BASE = "https://www.themoviedb.org/movie/";
     public static final String MOVIE_TMDB_LINK_LANG = "?language=";
